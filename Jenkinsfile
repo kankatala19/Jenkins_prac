@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/kankatala19/Jenkins_prac.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 sh '''
